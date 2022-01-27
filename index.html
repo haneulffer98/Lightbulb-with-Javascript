@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Lightbulb with Switch</title>
+    <styles>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin-left: 30%;
+  display: inline-flex;
+  align-items: center;
+}
+
+#on-btn, #off-btn {
+  width: 90px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#on-btn:active {
+  background-color: green;
+  color: white;
+}
+
+#on-btn:focus {
+  background-color: green;
+}
+
+#off-btn:active {
+  background-color: red;
+  color: white;
+}
+
+#off-btn:focus {
+  background-color: red;
+}
+    </styles>
+    
+    </head>
+<body>
+  
+  <div>
+  <img src="https://raw.githubusercontent.com/haneulffer98/Lightbulb-with-Javascript/main/Lightbulb-off.png" id="lightbulb" style="width:300px">
+  
+  
+  <button id="on-btn" onclick="document.getElementById('lightbulb').src='https://raw.githubusercontent.com/haneulffer98/Lightbulb-with-Javascript/main/Lightbulb-on.png'">on</button>
+
+  
+  <button id="off-btn" onclick="document.getElementById('lightbulb').src='https://raw.githubusercontent.com/haneulffer98/Lightbulb-with-Javascript/main/Lightbulb-off.png'">off</button>
+</div>
+  </body>
+</html>
